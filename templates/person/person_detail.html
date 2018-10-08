@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for per in person %}
+            <li><a href="/person/show_skill_photo/?id={{ per.id }}">{{ per.name }}</a></li>
+        {% endfor %}
+        <li><a href="/person/add_person/">添加人物</a></li>
+    </ul>
+
+</body>
+</html>
