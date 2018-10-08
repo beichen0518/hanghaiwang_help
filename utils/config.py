@@ -1,0 +1,9 @@
+from utils.settings import SQLALCHEMY_DATABASE_URI
+
+
+class Config:
+
+    SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    SECRET_KEY = 'secret_key'

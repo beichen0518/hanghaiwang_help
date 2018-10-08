@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for skill_url in skill_urls %}
+            <li><img src={{ skill_url }} width=800></li>
+        {% endfor %}
+        <li>
+            <form action="/person/add_skill_photo/", method="post", enctype="multipart/form-data">
+                <input type="hidden" name="id" value="{{ person.id }}">
+                <label for="skill_photo">添加图片</label><input type="file" name="skill_photo" required><br>
+                <input type="submit" value="添加">
+            </form>
+        </li>
+    </ul>
+
+</body>
+</html>
